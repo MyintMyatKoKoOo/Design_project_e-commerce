@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shop_design</title>
+    <link rel="stylesheet" href="css/min.css">
+    <link rel="stylesheet" href="icon/css/all.css">
+    <link rel="stylesheet" href="outcss/custom.css">
+</head>
+<body>
+
+<!--==============Menu_Side_Bar_Start============-->
+<nav class="nav flex-column" id="menu_side_bar">
+    <div class="nav-item text-center" id="side_profile">
+        <img src="images/profile.jpg" alt="" class="profile_img">
+        <p class="profile_text_name">ADMIN MYAT</p>
+        <p class="profile_text">WEB DEVELOPMENT</p>
+    </div>
+    <li class="nav-item" id="side_menu_text_item">
+        
+        <a href="index.html" class="nav-link" id="side_menu_text">
+            <i class="fas fa-home"></i>
+            Home
+        </a>
+    </li>
+    <li class="nav-item" id="side_menu_text_item">
+        
+        <a href="" class="nav-link" id="side_menu_text">
+             <i class="fab fa-fort-awesome"></i>   
+            Forms
+        </a>
+    </li>
+    <li class="nav-item" id="side_menu_text_item">
+        
+        <a href="" class="nav-link" id="side_menu_text">
+            <i class="fas fa-chart-line"></i>
+            Charts
+        </a>
+    </li>
+    <li class="nav-item" id="side_menu_text_item">
+        <a href="" class="nav-link" id="side_menu_text">
+            <i class="fas fa-table"></i>
+            Tables
+        </a>
+    </li>  
+    <li class="nav-item" id="side_menu_text_item">
+        <a href="" class="nav-link" id="side_menu_text">
+            <i class="fas fa-download"></i>
+            Download
+        </a>
+    </li>
+    <li class="nav-item" id="side_menu_text_item">
+        <a href="" class="nav-link" id="side_menu_text">
+            <i class="fas fa-sign-in-alt"></i>
+            Login Page
+        </a>
+    </li>
+</nav>
+
+<!--=============Top_Bar_Start===================-->
+<div class="container-fluid" id="top_bar">
+    <div class="container">
+        <div class="row offset-1"> 
+            <div class="navbar-brand">
+                <i class="fas fa-bars text-dark"></i>
+            </div>
+            <div class="ml-auto mt-2" >
+                <i class="far fa-clock" id="clock_icon"></i>
+                <span class="clock" id="MyClockDisplay"></span>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<!--=============Digit_View_Start=================-->
+<div class="container-fluid ">
+    <div class="container">
+        <div class="row offset-1">
+            <div class="col-md-2 " id="digit_show_card">
+                <p id="digit_icon_text"><i class="far fa-eye"></i>Views</p>
+                <p id="digit">4352</p>
+            </div>
+            <div class="col-md-2" id="digit_show_card">
+                <p id="digit_icon_text"><i class="fas fa-users"></i>Members</p>
+                <p id="digit">52</p>
+            </div>
+            <div class="col-md-2" id="digit_show_card">
+                <p id="digit_icon_text"><i class="fas fa-shipping-fast"></i>Orders</p>
+                <p id="digit">12</p>
+            </div>
+            <div class="col-md-2" id="digit_show_card">
+                <p id="digit_icon_text"><i class="fas fa-archive"></i>Products</p>
+                <p id="digit">5000</p>
+            </div>
+            <div class="col-md-2" id="digit_show_card">
+                <p id="digit_icon_text"><i class="fas fa-sitemap"></i>Category</p>
+                <p id="digit">4352</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--=============Chart_Show_Start=================-->
+
+<div class="container-fluid mt-5 pt-5">
+    <div class="container">
+        <div class="row offset-1">
+            <div class="col-md-6">
+                <canvas id="myChartdon"></canvas>
+            </div>
+            <div class="col-md-6">
+                <canvas id="myChartline"></canvas>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/cdn.js"></script>
+<script src="node_modules/chart.js/dist/Chart.js"></script>
+<script src="js/chart.js"></script>
+<script src="js/clock.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>    

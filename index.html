@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shop_design</title>
+    <link rel="stylesheet" href="css/min.css">
+    <link rel="stylesheet" href="icon/css/all.css">
+    <link rel="stylesheet" href="outcss/custom.css">
+</head>
+<body>
+
+<!--=============Nav_Start===============-->	
+<div class="container-fluid bg-light">
+	<div class="container p-2">
+		<div class="row" id="nav_bar">
+			<div class="navbar-brand col-md-3 " id="main_logo">Shop</div>
+				<div class="searchbar col-md-5">
+					<form action="" class="input-group">
+						<input type="text" class="form-control rounded-0">
+						<a href="" id="search_icon" class="input-group-append ml-2">
+							<i class="fa fa-search"></i>
+						</a>
+					</form>
+				</div>
+				<div class="col-md-3 text-right basekt_icon_side">
+					<i class="fas fa-shopping-basket" id="shopping_basket"></i> <span class="ml-3" id="basket_price">$303</span>
+				</div>
+		</div>
+	</div>
+</div>
+
+<!--============Menu_bar_Start============-->
+<div class="container-fluid menu_bar">
+	<div class="container">
+		<nav class="nav ">
+			<li class="nav-item">
+				<a class="nav-link menu_text" href="#">HOME</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link menu_text" href="#">SALE</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link menu_text" href="#">HANDBAGS</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link menu_text" href="#">WALLETS</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link menu_text" href="#">SHOES</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link menu_text" href="#">VINTAGE</a>
+			</li>
+	
+			<li class="nav-item">
+				<a class="nav-link menu_text" href="#">MENS STORE</a>
+			</li>
+		
+			<li class="nav-item">
+				<a class="nav-link menu_text" href="#">SERVICES</a>
+			</li>
+		
+			<li class="nav-item">
+				<a class="nav-link menu_text" href="#">CONTAC US</a>
+			</li>
+	
+			<li class="nav-item">
+				<a class="nav-link menu_text" href="admin_dashboard.html">ADMIN</a>
+			</li>
+	
+			<li class="nav-item">
+				<a class="nav-link menu_text1" href="#">REGISTER</a>
+			</li>
+			
+		</nav>
+	</div>
+</div>
+
+<!--============Carousel_slide_Start======-->
+<div class="container-fluid bg-info" id="slide_show_product">
+	<div class="container">
+		<div id="carouselItems" class="carousel slide " data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselItems" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselItems" data-slide-to="1"></li>
+				<li data-target="#carouselItems" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner  p-5">
+				<div class="carousel-item active bg-info" data-interval="2000">
+					<div class="row">
+						<div class="col-3">
+							<img src="images/t-shirt1.png" alt="">
+						</div>
+						<div class="col-9">
+							<h3 class="slide_text_header col-6">COWHIDE<br>
+								STANDARD CREW
+							</h3>
+							<p id="slide_text_content" class="col-7">
+								The above example creates three equal-width columns on small,
+								 medium, large, and extra large devices using our predefined grid classes. 
+								Those columns are centered in the page with the parent
+							</p>
+							<div class="col-6">
+								<button class="btn btn-md btn-outline-light" id="slide_button">SHOP NOW</button>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+		
+				<div class="carousel-item" data-interval="2000">
+					<div class="row">
+						<div class="col-3">
+							<img src="images/t-shirt5.png" alt="">
+						</div>
+						<div class="col-9">
+							<h3 class="slide_text_header col-6">JACK<br>
+								BOSS STYLE
+							</h3>
+							<p id="slide_text_content" class="col-7">
+								The above example creates three equal-width columns on small,
+								 medium, large, and extra large devices using our predefined grid classes. 
+								Those columns are centered in the page with the parent
+							</p>
+							<div class="col-6">
+								<button class="btn btn-md btn-outline-light" id="slide_button">SHOP NOW</button>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+		
+				<div class="carousel-item" data-interval="2000">
+					<div class="row">
+						<div class="col-3">
+							<img src="images/t-shirt3.png" alt="">
+						</div>
+						<div class="col-9">
+							<h3 class="slide_text_header col-6">FREE STYLE<br>
+								T-SHIRT
+							</h3>
+							<p id="slide_text_content" class="col-7">
+								The above example creates three equal-width columns on small,
+								 medium, large, and extra large devices using our predefined grid classes. 
+								Those columns are centered in the page with the parent
+							</p>
+							<div class="col-6">
+								<button class="btn btn-md btn-outline-light" id="slide_button">SHOP NOW</button>
+							</div>
+							
+						</div>
+					</div>
+					
+
+				</div>
+			</div>
+		</div>		
+	</div>
+</div>
+
+<!--============Featured_Product_Start=====-->
+<div class="container text-center mt-5">
+	<div class="row justify-content-between">
+		<div class="col-md-3" id="card">
+			<div class="row">
+				<div class="col-5">
+					<img src="images/shoes.png" alt="">
+				</div>
+				<div class="col-7 card_text text-left pl-5">
+					<p class="ml-2 mt-2">BRANDED <br>
+						SHOES
+					</p>
+					<button class="" id="card_btn_featured">
+						SHOP
+					</button>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="col-md-3" id="card">
+			<div class="row">
+				<div class="col-5">
+					<img src="images/pants.png" alt="">
+				</div>
+				<div class="col-7 card_text text-left pl-5">
+					<p>BRANDED<br>
+						PANTS
+					</p>
+					<button class="" id="card_btn_featured">
+						SHOP
+					</button>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-3" id="card">
+			<div class="row">
+				<div class="col-5">
+					<img src="images/clothes.png" alt="">
+				</div>
+				<div class="col-7 card_text text-left pl-4">
+					<p>BRANDED<br>
+					CLOTHES
+					</p>
+					<button class="" id="card_btn_featured">
+						SHOP
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!---===========Featured_Product_Bar=======-->
+<div class="container-fluid mt-5" id="featured_bar">
+	<div class="container">
+		<p id="featured_bar_text" class="p-2">FEATURED PRODUCTS</p>
+	</div>
+</div>
+
+<!--============All_Products_Start=========-->
+<div class="container mb-5">
+	<div class="row offset-md-1">
+		<div class="col-md-3 text-center pt-3 pb-4 mr-5 mb-5" id="card_for_product">
+			<img src="images/heel.png" alt="">
+			<p id="all_product_text">BRANDED HEEL</p>
+			<span id="all_product_text">$ 300</span>
+			<button id="all_product_btn">BUY NOW</button>
+		</div>
+		<div class="col-md-3 text-center pt-3 pb-4 mr-5 mb-5" id="card_for_product">
+			<img src="images/garment.png" alt="">
+			<p id="all_product_text">BRANDED GARMENT</p>
+			<span id="all_product_text">$ 300</span>
+			<button id="all_product_btn">BUY NOW</button>
+		</div>
+		<div class="col-md-3 text-center pt-3 pb-4 mr-5 mb-5" id="card_for_product">
+			<img src="images/short.png" alt="">
+			<p id="all_product_text">BRANDED SHORT</p>
+			<span id="all_product_text">$ 300</span>
+			<button id="all_product_btn">BUY NOW</button>
+		</div>
+		<div class="col-md-3 text-center pt-3 pb-4 mr-5 mb-5" id="card_for_product">
+			<img src="images/shoes1.png" alt="">
+			<p id="all_product_text">BRANDED SHOES</p>
+			<span id="all_product_text">$ 300</span>
+			<button id="all_product_btn">BUY NOW</button>
+		</div>
+		<div class="col-md-3 text-center pt-3 pb-4 mr-5 mb-5" id="card_for_product">
+			<img src="images/dress.png" alt="">
+			<p id="all_product_text">BRANDED DRESS</p>
+			<span id="all_product_text">$ 300</span>
+			<button id="all_product_btn">BUY NOW</button>
+		</div>
+		<div class="col-md-3 text-center pt-3 pb-4 mr-5 mb-5" id="card_for_product">
+			<img src="images/sport_shoe.png" alt="">
+			<p id="all_product_text">BRANDED SPORT SHOE</p>
+			<span id="all_product_text">$ 300</span>
+			<button id="all_product_btn">BUY NOW</button>
+		</div>	
+	</div>
+</div>	
+
+<!--===========Footer_Start=================-->
+<div class="container-fluid" id="footer_bar">
+	<div class="container p-2">
+		<div class="row offset-1">
+			<ul class="list-group col-4 rounded-0 text-left" id="footer_bar_list">
+				<li class="list-group-item" id="footer_bar_items"><span id="header">FEATURED SALE</span></li>
+				<li class="list-group-item" id="footer_bar_items">Green Shop</li>
+				<li class="list-group-item" id="footer_bar_items">Shopaholic</li>
+				<li class="list-group-item" id="footer_bar_items">BigMart</li>
+				<li class="list-group-item" id="footer_bar_items">Class Pretty </li>
+			</ul>
+			<ul class="list-group col-4 text-left" id="footer_bar_list">
+				<li class="list-group-item" id="footer_bar_items"><span id="header">MAN SHOP</span></li>
+				<li class="list-group-item" id="footer_bar_items">Breezy Life</li>
+				<li class="list-group-item" id="footer_bar_items">The Full Cart</li>
+				<li class="list-group-item" id="footer_bar_items">Arbor</li>
+				<li class="list-group-item" id="footer_bar_items">Earth Joy</li>
+			</ul>
+			<ul class="list-group col-4 text-left" id="footer_bar_list">
+				<li class="list-group-item" id="footer_bar_items"><span id="header">GIRL SHOP</span></li>
+				<li class="list-group-item" id="footer_bar_items">Primo Space</li>
+				<li class="list-group-item" id="footer_bar_items">Fly Buy</li>
+				<li class="list-group-item" id="footer_bar_items">Choose And Track</li>
+				<li class="list-group-item" id="footer_bar_items">Web Mall</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!--===========Footer_CopyRight_Start=================-->
+<div class="container-fulid text-center bg-info" >
+	
+	<span id="copy_right">Copyright &#169; 2020</span>	
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/cdn.js"></script>
+<!-- <script src="js/app.js"></script> -->
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
