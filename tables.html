@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shop_design</title>
+    <link rel="stylesheet" href="css/min.css">
+    <link rel="stylesheet" href="icon/css/all.css">
+    <link rel="stylesheet" href="outcss/custom.css">
+</head>
+<body>
+
+
+<!--==============Menu_Side_Bar_Start============-->
+<nav class="nav flex-column" id="menu_side_bar">
+    <div class="nav-item text-center" id="side_profile">
+        <img src="images/profile.jpg" alt="" class="profile_img">
+        <p class="profile_text_name">ADMIN MYAT</p>
+        <p class="profile_text">WEB DEVELOPMENT</p>
+    </div>
+    <li class="nav-item" id="side_menu_text_item">
+        
+        <a href="index.html" class="nav-link" id="side_menu_text">
+            <i class="fas fa-home"></i>
+            Home
+        </a>
+    </li>
+    <li class="nav-item" id="side_menu_text_item">
+        
+        <a href="creates.html" class="nav-link" id="side_menu_text">
+            <i class="fas fa-folder-plus"></i>
+            Create
+        </a>
+    </li>
+    <li class="nav-item" id="side_menu_text_item">
+        
+        <a href="charts.html" class="nav-link" id="side_menu_text">
+            <i class="fas fa-chart-line"></i>
+            Charts
+        </a>
+    </li>
+    <li class="nav-item" id="side_menu_text_item">
+        <a href="tables.html" class="nav-link" id="side_menu_text">
+            <i class="fas fa-table"></i>
+            Tables
+        </a>
+    </li>  
+    <li class="nav-item" id="side_menu_text_item">
+        <a href="" class="nav-link" id="side_menu_text">
+            <i class="fas fa-download"></i>
+            Download
+        </a>
+    </li>
+    <li class="nav-item" id="side_menu_text_item">
+        <a href="" class="nav-link" id="side_menu_text">
+            <i class="fas fa-sign-in-alt"></i>
+            Login Page
+        </a>
+    </li>
+</nav>
+<!--=============Top_Bar_Start===================-->
+<div class="container-fluid" id="top_bar">
+    <div class="container">
+        <div class="row offset-1"> 
+            <div class="navbar-brand">
+                <i class="fas fa-bars text-dark"></i>
+            </div>
+            <div class="ml-auto mt-2" >
+                <i class="far fa-clock" id="clock_icon"></i>
+                <span class="clock" id="MyClockDisplay"></span>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!--=============Tables=========================-->
+<div class="conatiner-fluid" id="table_main">
+    <div class="container">
+        <div class="row offset-md-1 mt-5">
+            <div class="col-md-6" id="risk_table_col">
+                <table class="table table-striped" id="risk_table">
+                    <p class="text-center" id="table_header">Risk & Compliant Table</p>
+                    <thead>
+                      <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Risk & Complaint</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Content</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="col-md-6 mt-1" id="risk_table_col">
+                <p class="text-center mb-2" id="table_list">Table List</p>
+                <div class="list-group">
+                    <a href="#risk_table" class="list-group-item list-group-item-action active rounded-0">
+                      Risk Table
+                    </a>
+                    <a href="#order_table" class="list-group-item list-group-item-action">Order Table</a>
+                    <a href="#product_table" class="list-group-item list-group-item-action">Product Table</a>
+                    <a href="#" class="list-group-item list-group-item-action">Category Table</a>
+                    <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Vestibulum at eros</a>
+                  </div>
+            </div>
+            <div class="col-md-6" id="risk_table_col">
+                <table class="table table-striped" id="risk_table">
+                    <p class="text-center" id="table_header">Risk & Compliant Table</p>
+                    <thead>
+                      <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Risk & Complaint</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Content</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="col-md-6" id="risk_table_col">
+                <table class="table table-striped" id="product_table">
+                    <p class="text-center" id="table_header">Risk & Compliant Table</p>
+                    <thead>
+                      <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Risk & Complaint</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Content</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="col-md-6" id="risk_table_col">
+                <table class="table table-striped" id="risk_table">
+                    <p class="text-center" id="table_header">Risk & Compliant Table</p>
+                    <thead>
+                      <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Risk & Complaint</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Content</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="col-md-6" id="risk_table_col">
+                <table class="table table-striped" id="product_table">
+                    <p class="text-center" id="table_header">Risk & Compliant Table</p>
+                    <thead>
+                      <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Risk & Complaint</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Content</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="col-md-6" id="risk_table_col">
+                <table class="table table-striped" id="risk_table">
+                    <p class="text-center" id="table_header">Risk & Compliant Table</p>
+                    <thead>
+                      <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Risk & Complaint</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Content</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="col-md-6" id="risk_table_col">
+                <table class="table table-striped" id="risk_table">
+                    <p class="text-center" id="table_header">Risk & Compliant Table</p>
+                    <thead>
+                      <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Risk & Complaint</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Content</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="col-md-6" id="risk_table_col">
+                <table class="table table-striped" id="risk_table">
+                    <p class="text-center" id="table_header">Risk & Compliant Table</p>
+                    <thead>
+                      <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Risk & Complaint</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Content</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="col-md-6" id="risk_table_col">
+                <table class="table table-striped" id="order_table">
+                    <p class="text-center" id="table_header">Risk & Compliant Table</p>
+                    <thead>
+                      <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Risk & Complaint</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Content</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                    Views
+                                  </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm bg-info mr-2">Mark</button>
+                                <button class="btn btn-sm bg-danger">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!--=============Modal===========================-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum unde neque explicabo sunt? Blanditiis dolorem quibusdam, fuga quod quaerat nisi aperiam sit reprehenderit praesentium officia error nihil minima quos? Temporibus.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias similique quia aspernatur odit ad quae, ipsam reprehenderit velit explicabo provident eos ut nobis sapiente deleniti eius maxime incidunt ab quaerat.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/cdn.js"></script>
+<script src="js/clock.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>    

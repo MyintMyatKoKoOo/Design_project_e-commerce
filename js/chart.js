@@ -35,3 +35,4 @@ let myLineChart = new Chart(line, {
     }
     
 });
+

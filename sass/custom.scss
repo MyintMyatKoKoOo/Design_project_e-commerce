@@ -84,8 +84,21 @@ body{
 /*===========Featured_Start===========*/
 #card{
 	border:1px solid #ccc9c979;
+	position: relative;
 	box-shadow: -2px 3px 7px $textcolor;
-	&:hover{box-shadow: 2px 3px 7px $textcolor;}
+	&:hover{box-shadow: 2px 3px 7px $textcolor;cursor: pointer;}
+	#view_btn{
+		margin-left: 10px;
+		padding: 3px 10px;
+		background-color:$mainblue;
+		color:$textwhite;
+		border-radius: 4px;
+		font-size: 16px;
+		border: 1px solid $mainblue;
+		&:hover{
+			color: $textcolor;
+		}
+	}
 }
 .card_text{
 	color: $textcolor;
@@ -98,6 +111,9 @@ body{
 	color:$textwhite;
 	font-size: 13px;
 	margin-left: 7px;
+	&:hover{
+		color: $textcolor;
+	}
 }
 /*===========Featured_Bar_Start===========*/
 #featured_bar{
@@ -114,14 +130,18 @@ body{
 		color: $textcolor;
 	}
 	#all_product_btn{
-		padding: 3px 5px;
+		padding: 3px 10px;
 		color: $textwhite;
 		margin-left: 10px;
 		border-radius: 4px;
 		border: 1px solid $mainblue;
 		background-color: $mainblue;
-		font-size: 13px;
+		font-size: 16px;
+		&:hover{
+			color: $textcolor;
+		}
 	}
+	
 }
 /*=========Footer_Bar_Start================*/
 
@@ -160,6 +180,7 @@ body{
 	background-color: $mainblue;
 	height:100vh;
 	position: absolute;
+	position: fixed;
 	#side_profile{
 		padding-top: 15px;
 		width: 100%;
@@ -233,5 +254,114 @@ body{
 	#digit{
 		margin-left: 50px;
 		font-weight: 600;
+	}
+}
+/*========ChartPage============*/
+
+/*========Chart_table_list_Start========*/
+#charts_table_list{
+	button{
+		box-shadow: 2px 2px 3px $textcolor;
+		&:hover{
+			background-color: $mainblue;
+		}
+
+	}
+}
+
+/*======TablePage=====================*/
+#table_main{
+	font-size: 13px;
+	button{
+		font-size: 12px;
+		border-radius: 0px;
+	}
+	#table_header{
+		font-size: 15px;
+		padding-bottom: 5px;
+		border-bottom: 2px solid $textcolor;
+	}
+}
+#risk_table{
+	border: 1px solid $textcolor;
+
+}
+#table_list{
+	font-size: 14px;
+	padding-bottom: 6px;
+	border-bottom: 2px solid $textcolor;
+}
+#order_table{
+	@extend #risk_table;
+}
+#product_table{
+	@extend #risk_table;
+}
+/*=======Create_form_Page===============*/
+#create_form_list{
+	
+	li{
+		font-size: 13px;
+		transition:all 100ms linear 100ms;
+		&:hover{
+			cursor: pointer;
+			font-weight: 600;
+		}
+	}
+
+}
+
+/*=======Detail_Page==================*/
+#product_detail{
+	padding: 10px;
+	#product_item{
+		border: 1px solid $textcolor;
+		background-color: $mainblue;
+	}
+	#product_detail_content{
+		font-size: 14px;
+		li{
+			background-color: $mainblue;
+			width: 100%;
+			color: $textwhite;
+			border: 1px solid $textcolor;
+			border-radius: 0px;
+		}
+		#detail_size{
+			width: 100px;
+			font-size: 13px;
+			color: $textcolor;
+		}
+		#product_add_card{
+			font-size: 12px;
+			padding: 3px 4px;
+			margin-top: -4px;
+		}
+		#product_qty{
+			width: 100px;
+			font-size: 13px;
+		}
+	}
+	
+}
+#comment_report{
+	background-color: $mainblue;
+	border: 1px solid $textcolor;
+	margin-bottom: 50px;
+	padding-bottom: 20px;
+	padding-top:20px;
+	#comment_nav{
+		text-decoration: none;
+		color: $colorblack2;
+	}
+	#report_nav{
+		text-decoration: none;
+		color:$colorblack2;
+	}
+	#cmt_btn{
+		color: $textwhite;
+	}
+	#rpt_btn{
+		color:$textwhite;
 	}
 }

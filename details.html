@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shop_design</title>
+    <link rel="stylesheet" href="css/min.css">
+    <link rel="stylesheet" href="icon/css/all.css">
+    <link rel="stylesheet" href="outcss/custom.css">
+</head>
+<body>
+   <!--=============Nav_Start===============-->	
+<div class="container-fluid bg-light">
+	<div class="container p-2">
+		<div class="row" id="nav_bar">
+			<div class="navbar-brand col-md-3 " id="main_logo">Shop</div>
+				<div class="searchbar col-md-5">
+					<form action="" class="input-group">
+						<input type="text" class="form-control rounded-0">
+						<a href="" id="search_icon" class="input-group-append ml-2">
+							<i class="fa fa-search"></i>
+						</a>
+					</form>
+				</div>
+				<div class="col-md-3 text-right basekt_icon_side">
+					<i class="fas fa-shopping-basket" id="shopping_basket"></i> <span class="ml-3" id="basket_price">$303</span>
+				</div>
+		</div>
+	</div>
+</div>
+
+<!--============Menu_bar_Start============-->
+<div class="container-fluid menu_bar">
+	<div class="container">
+		<nav class="nav ">
+			<li class="nav-item">
+				<a class="nav-link menu_text" href="#">HOME</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link menu_text" href="#">SALE</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link menu_text" href="#">HANDBAGS</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link menu_text" href="#">WALLETS</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link menu_text" href="#">SHOES</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link menu_text" href="#">VINTAGE</a>
+			</li>
+	
+			<li class="nav-item">
+				<a class="nav-link menu_text" href="#">MENS STORE</a>
+			</li>
+		
+			<li class="nav-item">
+				<a class="nav-link menu_text" href="#">SERVICES</a>
+			</li>
+		
+			<li class="nav-item">
+				<a class="nav-link menu_text" href="#">CONTAC US</a>
+			</li>
+	
+			<li class="nav-item">
+				<a class="nav-link menu_text" href="admin_dashboard.html">ADMIN</a>
+			</li>
+	
+			<li class="nav-item">
+				<a class="nav-link menu_text1" href="#">REGISTER</a>
+			</li>
+			
+		</nav>
+	</div>
+</div>
+
+<!--============Product_detail_Start========-->
+<div class="container-fluid">
+    <div class="container">
+        <div class="row offset-md-1 mt-5" id="product_detail">
+            <div class="col-md-3 p-4 " id="product_item" >
+                <img src="images/clothes.png" alt="" width="100%">
+            </div>
+            <div class="col-md-6" id="product_detail_content">
+                <li class="list-group-item rounded-0">
+                    <p>Product_code : A242</p>  
+                    <p>Avaliaity : instock</p>
+                </li>
+                <li class="list-group-item">
+                   <p>Name : Dress_Red</p> 
+                   <p>Price : $300</p>
+
+                   <select name="" id="detail_size" class="">
+                        <option value="" selected disabled>Size</option>
+                        <option value="" >XL</option>
+                        <option value="">M</option>
+                        <option value="">XXL</option>
+                    </select>
+                </li>
+                <li class="list-group-item">
+                    <input type="number" placeholder="Qty" id="product_qty"> 
+                    <button class="btn btn-sm btn-info rounded-0 ml-2" id="product_add_card">Add to Card</button>
+                </li>
+               
+            </div>
+        </div>
+        <div class="row offset-md-1 mt-2">
+			<div class="col-md-9" id="comment_report">
+				<ul class="nav nav-tabs">
+					<li class="nav-item">
+						<a href="#comment" class="nav-link" data-toggle="tab" id="comment_nav">Comment</a>
+					</li>
+					<li class="nav-item">
+						<a href="#report" class="nav-link" data-toggle="tab" id="report_nav">Report</a>
+					</li>
+				</ul>	
+				<div class="tab-content">
+					<div class="tab-pane active" role="tabpanel" id="comment">
+						<form action="" id="commentForm">
+						<textarea name="" id="" cols="30" rows="5" class="form-control rounded-0" placeholder="Comment"></textarea>
+						</form>
+						<button class="btn btn-sm bg-info float-right mt-2 rounded-0" form="commentForm" id="cmt_btn">Comment</button>
+					</div>
+					<div class="tab-pane" role="tabpanel" id="report">
+						<form action="" id="reportForm">
+							<input type="text" placeholder="Title" class="form-control rounded-0 mb-2">
+							<textarea name="" id="" cols="30" rows="5" class="form-control rounded-0" placeholder="Report"></textarea>
+						</form>
+						<button class="btn btn-sm bg-info float-right mt-2 rounded-0" form="reportForm" id="rpt_btn">Report</button>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/cdn.js"></script>
+<script src="js/clock.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>    
