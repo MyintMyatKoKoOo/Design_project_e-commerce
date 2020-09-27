@@ -316,7 +316,8 @@ body{
 	padding: 10px;
 	#product_item{
 		border: 1px solid $textcolor;
-		background-color: #00cccc27;
+		// background-color: #00cccc27;
+		box-shadow:2px 2px 3px $textcolor;
 	}
 	#product_detail_content{
 		font-size: 14px;
@@ -395,7 +396,7 @@ body{
 }
 /*=======Login_Form==================*/
 #login_form{
-	padding:40px 30px;
+	padding:30px 30px;
 	border: 1px solid $textcolor;
 	background-color: #00cccc27;
 	#login_header_text{
@@ -409,20 +410,20 @@ body{
 	}
 	#login_email{
 		width: 300px;
-		height: 38px;
+		height: 35px;
 		border-radius: 0px;
-		border: 2px solid $colorinfo;
-		margin-bottom: 50px;
+		border: 1px solid $colorinfo;
+		margin-bottom: 40px;
 		&:focus{
 			box-shadow: 4px 4px 3px $textcolor;
 		}
 	}
 	#login_label{
 		margin-right: 20px;
-		width:40px;
+		width: 40px;
 		height: 40px;
 		border-radius: 50%;
-		border: 2px solid $colorinfo;
+		border: 1px solid $colorinfo;
 		text-align: center;
 		#login_icon{
 			z-index: 2;
@@ -474,9 +475,9 @@ body{
 	#register_name{
 		
 		width: 300px;
-		height: 38px;
+		height: 35px;
 		border-radius: 0px;
-		border: 2px solid $colorinfo;
+		border: 1px solid $colorinfo;
 		margin-bottom: 30px;
 		&:focus{
 			box-shadow: 4px 4px 3px $textcolor;
@@ -487,7 +488,7 @@ body{
 		width:40px;
 		height: 40px;
 		border-radius: 50%;
-		border: 2px solid $mainblue;
+		border: 1px solid $mainblue;
 		text-align: center;
 		#register_icon{
 			z-index: 2;
