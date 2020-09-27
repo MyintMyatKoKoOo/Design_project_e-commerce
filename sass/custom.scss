@@ -316,37 +316,59 @@ body{
 	padding: 10px;
 	#product_item{
 		border: 1px solid $textcolor;
-		background-color: $mainblue;
+		background-color: #00cccc27;
 	}
 	#product_detail_content{
 		font-size: 14px;
 		li{
-			background-color: $mainblue;
+			padding-bottom:20px;
+			padding-top: 20px;
+			background-color:  #00cccc27;
 			width: 100%;
-			color: $textwhite;
+			// color: $textwhite;
 			border: 1px solid $textcolor;
 			border-radius: 0px;
+			color: $colorinfo;
+			font-weight: 600;
 		}
 		#detail_size{
 			width: 100px;
 			font-size: 13px;
-			color: $textcolor;
+			color:$colorinfo;
+			border: 1px solid $colorinfo;
+
 		}
 		#product_add_card{
 			font-size: 12px;
 			padding: 3px 4px;
 			margin-top: -4px;
+			&:hover{
+				background-color: $mainblue;
+			}
 		}
 		#product_qty{
+			border: 1px solid $colorinfo;
+			color: $colorinfo;
 			width: 100px;
+			font-weight: 600;
 			font-size: 13px;
 		}
 	}
 	
 }
 #comment_report{
-	background-color: $mainblue;
-	border: 1px solid $textcolor;
+	// background-color:  #00cccc27;
+	#cmt_nav{
+		border: 1px solid $mainblue;
+		// border-bottom: 0px;
+		border-radius: 20px;
+		
+	}
+	#rpt_nav{
+		border: 1px solid $mainblue;
+		// border-bottom: 0px;
+		border-radius: 20px;
+	}
 	margin-bottom: 50px;
 	padding-bottom: 20px;
 	padding-top:20px;
@@ -363,5 +385,139 @@ body{
 	}
 	#rpt_btn{
 		color:$textwhite;
+	}
+	#comment,#report{
+		textarea,input[type='text']{
+			border: 1px solid $mainblue;
+			background-color:  #00cccc27;
+		}
+	}
+}
+/*=======Login_Form==================*/
+#login_form{
+	padding:40px 30px;
+	border: 1px solid $textcolor;
+	background-color: #00cccc27;
+	#login_header_text{
+		color:$mainblue;
+		font-size: 20px;
+		font-weight: 600;
+		border-bottom: 1px solid $mainblue;
+		padding-bottom: 10px;
+		margin-bottom: 50px;
+		
+	}
+	#login_email{
+		width: 300px;
+		height: 38px;
+		border-radius: 0px;
+		border: 2px solid $colorinfo;
+		margin-bottom: 50px;
+		&:focus{
+			box-shadow: 4px 4px 3px $textcolor;
+		}
+	}
+	#login_label{
+		margin-right: 20px;
+		width:40px;
+		height: 40px;
+		border-radius: 50%;
+		border: 2px solid $colorinfo;
+		text-align: center;
+		#login_icon{
+			z-index: 2;
+			margin-top: 9px;
+			font-size: 20px;
+			color: $mainblue;
+		
+		}
+	}
+	#login_pass{
+		@extend #login_email;
+	}
+	#login_submit{
+		@extend #login_email;
+		background-color: $textwhite;
+		color: $mainblue;
+		font-size: 20px;
+		font-weight: 600;
+		&:hover{
+			background-color: $colorinfo;
+			color: $textwhite;
+		}
+	}
+	#register_text{
+		color: $textcolor;
+		font-size: 15px;
+		margin-right: 10px;
+	}
+	#create_account_text{
+		text-decoration: none;
+		color: $colorinfo;
+	}
+}
+/*======Register_Form===============*/
+#register_form{
+	margin-bottom: 10px;
+	padding:30px 30px;
+	border: 1px solid $textcolor;
+	background-color: #00cccc27;
+	#register_header_text{
+		color:$mainblue;
+		font-size: 20px;
+		font-weight: 600;
+		border-bottom: 1px solid $mainblue;
+		padding-bottom: 10px;
+		margin-bottom: 40px;
+		
+	}
+	#register_name{
+		
+		width: 300px;
+		height: 38px;
+		border-radius: 0px;
+		border: 2px solid $colorinfo;
+		margin-bottom: 30px;
+		&:focus{
+			box-shadow: 4px 4px 3px $textcolor;
+		}
+	}
+	#register_label{
+		margin-right: 20px;
+		width:40px;
+		height: 40px;
+		border-radius: 50%;
+		border: 2px solid $mainblue;
+		text-align: center;
+		#register_icon{
+			z-index: 2;
+			margin-top: 9px;
+			font-size: 20px;
+			color: $mainblue;
+		
+		}
+	}
+	#register_pass{
+		@extend #register_name;
+	}
+	#register_submit{
+		@extend #register_name;
+		background-color: $textwhite;
+		color: $mainblue;
+		font-size: 20px;
+		font-weight: 600;
+		&:hover{
+			background-color: $colorinfo;
+			color: $textwhite;
+		}
+	}
+	#register_text{
+		color: $textcolor;
+		font-size: 15px;
+		margin-right: 10px;
+	}
+	#create_account_text{
+		text-decoration: none;
+		color: $colorinfo;
 	}
 }
